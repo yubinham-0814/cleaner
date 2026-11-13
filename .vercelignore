@@ -1,0 +1,18 @@
+# 배포(Vercel)에는 쓰는 사람에게 필요한 것만 — 정리기 화면 · rules/ · data/
+# 정답 · 정리본 · 진단 · 정리 스크립트 · README 는 올라가지 않는다.
+
+# 1. 맨 위의 모든 것을 막는다
+/*
+
+# 2. 올릴 것만 연다
+#    정리기 화면
+!/index.html
+!/app.js
+!/clean.js
+!/style.css
+!/lib/
+
+#    규칙 · 예시 파일
+!/rules/
+!/data/
+/data/상담원장_2025.xlsx

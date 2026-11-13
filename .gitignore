@@ -1,0 +1,35 @@
+# 저장소(GitHub 공개)에는 아래에서 «!» 로 연 것만 들어간다.
+# 정한 것 — 올린다: 정리기 화면 · rules/ · data/ · README · 정리/ 의 스크립트(코드만)
+#          올리지 않는다: tools/answer/ 의 정답 · 정리본/ · 진단/ · 그 밖의 csv · xlsx
+# 새 파일을 올리려면 여기에 «!» 줄을 더한다. 더하지 않으면 저절로 빠진다.
+
+# 1. 맨 위의 모든 것을 막는다
+/*
+
+# 2. 올릴 것만 연다
+!/.gitignore
+!/.vercelignore
+!/README.md
+
+#    정리기 화면
+!/index.html
+!/app.js
+!/clean.js
+!/style.css
+!/lib/
+
+#    규칙 · 예시 파일
+!/rules/
+!/data/
+/data/상담원장_2025.xlsx
+
+#    정리 스크립트 — 코드만 (돌리면 생기는 __pycache__ 는 빼고)
+!/정리/
+/정리/*
+!/정리/*.py
+
+# 3. 연 폴더 안에서도 빼는 것
+__pycache__/
+*.pyc
+.env
+.env.*
